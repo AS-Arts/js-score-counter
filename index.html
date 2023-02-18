@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+	<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>js score counter</title>
+	<meta name="description" content=" Enter the number of players and get started!">
+    <meta name="author" content="ArtsBlog">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">	
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" rel="stylesheet">
+	<style>
+	.card-body {
+    max-height: 250px;
+    overflow-y: auto;
+	}
+	</style>		
+	</head>
+	<body class="bg-light"> 
+		<header>
+		  <div class="collapse bg-dark" id="navbarHeader">
+			<div class="container">
+			  <div class="row">
+				<div class="col-sm-8 col-md-7 py-4">
+				  <h4 class="text-white">About</h4>
+				  <p class="text-white">Tired of pen and paper? Simply add up the points of your game for each player. Enter the number of players and get started!</p>
+				</div>
+				<div class="col-sm-4 offset-md-1 py-4">
+				  <h4 class="text-white">Menu</h4>
+				  <ul class="list-unstyled">
+					<li><a href="#" class="text-white">URL 1</a></li>
+					<li><a href="#" class="text-white">URL 2</a></li>
+					<li><a href="#" class="text-white">URL 3</a></li>
+				  </ul>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		  <div class="navbar navbar-dark bg-dark shadow-sm">
+			<div class="container">
+			  <a href="#" class="navbar-brand d-flex align-items-center">
+				<strong class="ms-2"><i class="bi bi-journal-plus"></i><b> js score </b><span class="fw-light">counter<span></strong>
+			  </a>
+			  <span class="navbar-nav ms-auto me-3"><button type="button" id="restart" class="btn btn-outline-secondary"><i class="bi bi-arrow-clockwise"></i></button></span>
+			  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			  </button>
+			</div>
+		  </div>
+		</header>
+		<div id="notify"></div>
+		<div class="py-5 text-center container intro">
+			<div class="row py-lg-3">
+				<div class="col-lg-6 col-md-8 mx-auto">
+					<h1><i class="bi bi-journal-plus"></i><b> js score </b><span class="fw-light">counter<span></h1>
+					<p class="lead text-muted">Tired of pen and paper? Simply add up the points of your game for each player. Enter the number of players and get started!</p>
+					<div class="row mb-3 d-flex justify-content-center">
+						<div class="col-lg-7 col-8 mx-auto">
+							<div class="input-group">
+								<input type="number" class="form-control" id="players" placeholder="number of players" aria-label="number of players" aria-describedby="number of players">
+								<button class="btn btn-outline-secondary" type="button" id="go"><i class="bi bi-controller"></i> Go!</button>
+							</div>
+						</div> 
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="album py-5 bg-light">
+			<div class="container">
+				<div id="player-cards" class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3"></div>	
+			</div>
+		</div>
+		<footer class="text-muted text-center container py-5">
+			<p>js score counter v0.1.4</p>			
+		</footer>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+		<script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+		<script src="assets/js/script.js"></script>
+	</body>
+</html>
